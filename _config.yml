@@ -1,0 +1,114 @@
+# The public documentation URL, used for sitemap.xml
+url: "https://docs.telerik.com/fiddler"
+
+# Exclude files which should not be in the output
+exclude: [README.md, Gemfile, Gemfile.lock, api_sort.rb]
+exclude_navigation: ["knowledge-base/*"]
+navigation:
+## List your directory names and order here, like this:
+    Configure-Fiddler:
+        title: Configure Fiddler
+        position: 0
+    Observe-Traffic:
+        title: Observe Traffic
+        position: 1
+    Modify-Traffic:
+        title: Modify Traffic
+        position: 2
+    Generate-Traffic:
+        title: Generate Traffic
+        position: 3
+    Save-And-Load-Traffic:
+        title: Save-And-Load Traffic
+        position: 4
+    Extend-Fiddler:
+        title: Extend Fiddler
+        position: 5
+    "knowledge-base":
+        title: "Knowledge Base"
+        isNew: true
+        position: 6
+    Troubleshoot-Fiddler:
+        title: Troubleshoot Fiddler
+        position: 7
+
+## Product title
+product: "Progress Telerik Fiddler"
+platform: fiddler
+
+## The application virtual path
+baseurl: /fiddler
+
+## Assign layout and category per different paths
+defaults:
+-
+    scope:
+        path: ""
+    values:
+        layout: "documentation"
+        category: "default"
+        product: "fiddler"
+        editable: true
+-
+    scope:
+        path: "knowledge-base"
+    values:
+        res_type: kb
+
+## The Kendo UI version used
+cdnVersion: "2017.3.1026"
+
+# Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
+# "foo": "Bar"
+
+ff-sheet-id: aa62b076-27a9-f0b8-f954-e963653a5a2d
+
+# The google services configuration
+google_tag_manager: 'GTM-6X92'
+gcs_engine: '001595215763381649090:fpe1norq_ow'
+gcs_api_key: 'AIzaSyD8zBghoTOj_uX85DHGGFTIjPmrOXgCn_M'
+
+skip_tabbed_code: true
+code_lang: true
+has_kb_portal: true
+has_api_reference: false
+
+edit_repo_url: https://github.com/telerik/fiddler-docs/edit/master
+download: https://www.telerik.com/download/fiddler
+nav:
+  "Videos": https://www.telerik.com/videos/fiddler/getting-started-with-fiddler-web-debugging-proxy
+  "Release History": https://www.telerik.com/support/whats-new/fiddler/release-history
+  "About": https://www.telerik.com/fiddler
+  "Priority Support": https://www.telerik.com/purchase/fiddler
+
+footer:
+-
+  title: "Getting Started"
+  links:
+    "Getting Started": https://www.telerik.com/videos/fiddler/getting-started-with-fiddler-web-debugging-proxy
+    "Download": https://www.telerik.com/download/fiddler
+-
+  title: "Support Resources"
+  links:
+    "Priority Support": https://www.telerik.com/purchase/fiddler
+-
+  title: "Community"
+  links:
+    "Blogs": https://www.telerik.com/blogs/tag/fiddler
+    "Videos": https://www.telerik.com/videos/fiddler
+
+footer_social:
+    facebook: https://www.facebook.com/Telerik/
+    youtube: https://www.youtube.com/user/TelerikInc
+    linkedin: https://www.linkedin.com/showcase/telerik/
+    twitter: https://twitter.com/TelerikFiddler
+
+# Assets pipeline configuration
+assets:
+    cachebust: soft
+    js_compressor: uglifier
+    gzip: false
+
+## Do not edit below this line
+safe: false
+markdown: MarkdownProcessor
